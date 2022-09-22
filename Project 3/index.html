@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e1a759a5d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
+    
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <!-- This is video player -->
+    <video src="Video/alexa skill.mp4" id="video" class="screen" poster="Images/alexa kit (1).jpg"></video>
+    <!-- Custom Controls -->
+    <div class="controls">
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2"></i>
+        </button>
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa2x"></i>
+        </button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
