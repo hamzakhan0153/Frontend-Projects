@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Typing Game</title>
+</head>
+<body>
+    <button class="settings-btn" id="settings-btn">
+         <i class="fas fa-tools fa-2x"></i>
+    </button>
+
+    <div class="settings" id="settings">
+        <form id="form">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Fast Typing Game</h2>
+        <p>Type this word as fast as you can:</p>
+        <h1 id="word"></h1>
+        <input type="text" id="user-word" placeholder="Please Type Here" autocomplete="off" />
+        <p class="timer">
+            Time Remaining: <span id="time">10s</span> 
+        </p>
+    
+        <p class="scorecard">
+            Score: <span id="score">0</span> 
+        </p>
+    </div>
+
+     <!-- gameover -->
+    <div class="gameover" id="gameover"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
